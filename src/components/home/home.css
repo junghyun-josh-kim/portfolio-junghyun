@@ -118,6 +118,7 @@
   .home__content {
     grid-template-columns: 100px repeat(2, 1fr);
     column-gap: 1.25rem;
+    text-align: center;
   }
 
   .home__hand {
@@ -155,6 +156,7 @@
   .home__content {
     grid-template-columns: 0.5fr 3fr;
     padding-top: 3.5rem;
+    place-items: center;
   }
 
   .home__img {
