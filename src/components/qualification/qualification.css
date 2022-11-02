@@ -79,3 +79,38 @@
   background-color: var(--text-color);
   transform: translate(6px, -7px);
 }
+
+/* BREAKPOINTS */
+
+/* Large Devices */
+@media screen and (max-width: 992px) {
+  .qualification__container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Medium Devices */
+@media screen and (max-width: 768px) {
+  .qualification__container {
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .qualification__sections {
+    grid-template-columns: inherit;
+  }
+
+  .qualification__button {
+    margin: 0 var(--mb-0-25);
+  }
+}
+
+/* Small Devices */
+@media screen and (max-width: 350px) {
+  .qualification__data {
+    gap: 0.5rem;
+  }
+}
