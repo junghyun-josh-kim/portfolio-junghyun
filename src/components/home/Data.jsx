@@ -57,7 +57,7 @@ const Data = () => {
       <p className='home__description'>
         Learning by Doing Learning by Doing Learning by Doing Learning by Doing
       </p>
-      <a href='' className='button button--flex'>
+      <a href='#contact' className='button button--flex'>
         Say Hello
         <svg
           class='button__icon'
