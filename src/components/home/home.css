@@ -156,12 +156,11 @@
   .home__content {
     grid-template-columns: 0.5fr 3fr;
     padding-top: 3.5rem;
-    place-items: center;
   }
 
   .home__img {
     order: initial;
-    justify-self: initial;
+    margin-left: -5rem;
     box-shadow: inset 0 0 0 6px rgb(255 255 255 / 30%);
     width: 200px;
     height: 200px;
@@ -181,6 +180,7 @@
   .home__img {
     width: 180px;
     height: 180px;
+    margin-left: -3rem;
   }
 
   .home__hand {
