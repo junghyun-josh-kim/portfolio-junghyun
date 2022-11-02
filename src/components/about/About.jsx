@@ -1,5 +1,4 @@
 import './about.css';
-import AboutImg from '../../assets/about.jpg';
 import CV from '../../assets/Junghyun-Cv.pdf';
 import Info from './Info';
 
