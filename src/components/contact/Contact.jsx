@@ -1,6 +1,22 @@
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import './contact.css';
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      'service_m8r14tb',
+      'template_feovrwq',
+      form.current,
+      'zvpRDfRo5jNh76o4H'
+    );
+    e.target.reset();
+  };
+
   return (
     <section className='contact section' id='contact'>
       <h2 className='section__title'>Contact</h2>
@@ -15,7 +31,7 @@ const Contact = () => {
               <i className='bx bx-mail-send contact__card-icon'></i>
 
               <h3 className='contact__card-title'>Email</h3>
-              <span className='contact__card-data'>jhkim911206@gmail.com</span>
+              <span className='contact__card-data'>joshkim1206@gmail.com</span>
 
               <a
                 href='mailto:jhkim911206@gmail.com.com'
@@ -57,7 +73,7 @@ const Contact = () => {
         <div className='contact__content'>
           <h3 className='contact__title'>Feel free to reach out </h3>
 
-          <form action='' className='contact__form'>
+          <form ref={form} onSubmit={sendEmail} className='contact__form'>
             <div className='contact__form-div'>
               <label className='contact__form-tag'>Name</label>
               <input
