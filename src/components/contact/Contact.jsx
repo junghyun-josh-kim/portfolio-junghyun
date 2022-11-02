@@ -78,14 +78,14 @@ const Contact = () => {
               />
             </div>
 
-            <div className='contact__form-div'>
+            <div className='contact__form-div contact__form-area'>
               <label className='contact__form-tag'>Content</label>
               <textarea
                 name='content'
                 cols='30'
                 rows='10'
                 className='contact__form-input'
-                placeholder='Content...'
+                placeholder='Content'
               ></textarea>
             </div>
             <button className='button button--flex'>
