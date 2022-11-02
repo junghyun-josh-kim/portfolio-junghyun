@@ -35,3 +35,25 @@
 .swiper-pagination-bullet-active {
   background-color: var(--title-color) !important;
 }
+
+/* Large Devices */
+@media screen and (max-width: 992px) {
+  .testimonial__container {
+    width: initial;
+  }
+
+  .testimonial__card {
+    padding: 1.25rem 1.5rem;
+  }
+}
+
+/* Medium Devices */
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+}
+
+/* Small Devices */
+@media screen and (max-width: 350px) {
+}
