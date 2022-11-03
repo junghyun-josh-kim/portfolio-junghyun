@@ -50,7 +50,7 @@
   height: 1px;
   background-color: var(--text-color);
   left: 0;
-  top: 0.8rem;
+  top: 1rem;
 }
 
 .home__description {
@@ -151,6 +151,12 @@
   .home__scroll {
     margin-left: 7.5rem;
   }
+
+  .home__subtitle::before {
+    width: 25px;
+    left: 4rem;
+    top: 0.8rem;
+  }
 }
 
 /* Medium Devices */
@@ -175,6 +181,31 @@
   .home__scroll {
     display: none;
   }
+
+  .home__subtitle::before {
+    width: 25px;
+    left: 11rem;
+    top: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .home__subtitle::before {
+    left: 2rem;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 576px) {
+  .home__subtitle::before {
+    left: 8rem;
+  }
+}
+
+@media screen and (min-width: 350px) and (max-width: 479px) {
+  .home__subtitle::before {
+    width: 20px;
+    left: 4rem;
+  }
 }
 
 /* Small Devices */
@@ -188,5 +219,9 @@
   .home__hand {
     width: 22px;
     height: 22px;
+  }
+
+  .home__subtitle::before {
+    left: 4rem;
   }
 }
