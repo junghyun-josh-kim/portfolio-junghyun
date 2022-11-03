@@ -38,7 +38,7 @@
   background-color: var(--title-color);
   color: var(--container-color);
   font-size: 1.2rem;
-  padding: 0.2rem 0.4rem;
+  padding: 0.2rem 0.6rem;
   border-radius: 0.5rem;
   display: inline-flex;
 }
@@ -56,18 +56,8 @@
     border-radius: 0.25rem;
     font-size: 1rem;
   }
-}
 
-.button__icon {
-}
-
-/* Medium Devices */
-@media screen and (max-width: 768px) {
-}
-
-@media screen and (max-width: 576px) {
-}
-
-/* Small Devices */
-@media screen and (max-width: 350px) {
+  .footer__social-link {
+    padding: 0.1rem 0.4rem;
+  }
 }
