@@ -113,6 +113,8 @@
   color: var(--title-color);
 }
 
+/* BREAKPOINTS */
+
 /* Large Devices */
 @media screen and (max-width: 992px) {
   .home__content {
