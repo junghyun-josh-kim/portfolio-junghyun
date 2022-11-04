@@ -2,6 +2,8 @@ import './work.css';
 import { projectsData, projectsNav } from './Data';
 import WorkItems from './WorkItems';
 import { useEffect, useState } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Works = () => {
   const [item, setItem] = useState({ name: 'All' });
@@ -19,6 +21,10 @@ const Works = () => {
     }
   }, [item]);
 
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   const handleClick = (event, index) => {
     setItem({ name: event.target.textContent });
     setActive(index);
@@ -26,7 +32,7 @@ const Works = () => {
 
   return (
     <>
-      <div className='work__filters'>
+      <div data-aos='zoom-in-down' data-aos-delay='0' className='work__filters'>
         {projectsNav.map((item, index) => {
           return (
             <span

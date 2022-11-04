@@ -1,3 +1,7 @@
+.work {
+  margin-bottom: 12rem;
+}
+
 .work__filters {
   display: flex;
   justify-content: center;

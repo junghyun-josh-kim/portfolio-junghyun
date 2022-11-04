@@ -1,5 +1,7 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './qualification.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Qualification = () => {
   const [toggleState, setToggleState] = useState(1);
@@ -7,13 +9,25 @@ const Qualification = () => {
     setToggleState(index);
   };
 
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <section className='qualification section'>
-      <h2 className='section__title'>Qualification</h2>
-      <span className='section__subtitle'>My Journey</span>
+      <h2 data-aos='fade' data-aos-delay='0' className='section__title'>
+        Qualification
+      </h2>
+      <span data-aos='fade' data-aos-delay='300' className='section__subtitle'>
+        My Journey
+      </span>
 
       <div className='qualification__container container'>
-        <div className='qualification__tabs'>
+        <div
+          data-aos='fade'
+          data-aos-delay='300'
+          className='qualification__tabs'
+        >
           <div
             className={
               toggleState === 1
@@ -47,7 +61,11 @@ const Qualification = () => {
                 : 'qualification__content'
             }
           >
-            <div className='qualification__data'>
+            <div
+              data-aos='fade-up'
+              data-aos-delay='0'
+              className='qualification__data'
+            >
               <div>
                 <h3 className='qualification__title'>Web Design</h3>
                 <span className='qualification__subtitle'>
@@ -64,7 +82,11 @@ const Qualification = () => {
               </div>
             </div>
 
-            <div className='qualification__data'>
+            <div
+              data-aos='fade-up'
+              data-aos-delay='0'
+              className='qualification__data'
+            >
               <div></div>
               <div>
                 <span className='qualification__rounder'></span>
@@ -82,7 +104,11 @@ const Qualification = () => {
               </div>
             </div>
 
-            <div className='qualification__data'>
+            <div
+              data-aos='fade-up'
+              data-aos-delay='0'
+              className='qualification__data'
+            >
               <div>
                 <h3 className='qualification__title'>E-commerce</h3>
                 <span className='qualification__subtitle'>
@@ -99,7 +125,11 @@ const Qualification = () => {
               </div>
             </div>
 
-            <div className='qualification__data'>
+            <div
+              data-aos='fade-up'
+              data-aos-delay='0'
+              className='qualification__data'
+            >
               <div></div>
               <div>
                 <span className='qualification__rounder'></span>

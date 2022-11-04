@@ -1,5 +1,7 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './services.css';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Services = () => {
   const [toggleState, setToggleState] = useState(0);
@@ -8,21 +10,42 @@ const Services = () => {
     setToggleState(index);
   };
 
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <section className='services section' id='services'>
-      <h2 className='section__title'>Services</h2>
-      <span className='section__subtitle'>What I offer</span>
+      <h2 data-aos='fade' className='section__title'>
+        Services
+      </h2>
+      <span data-aos='fade' data-aos-delay='300' className='section__subtitle'>
+        What I offer
+      </span>
 
       <div className='services__container container grid'>
         <div className='services__content'>
           <div>
-            <i className='uil uil-web-grid services__icon'></i>
-            <h3 className='services__title'>
+            <i
+              data-aos='fade'
+              data-aos-delay='0'
+              className='uil uil-web-grid services__icon'
+            ></i>
+            <h3
+              data-aos='fade'
+              data-aos-delay='300'
+              className='services__title'
+            >
               Product
               <br />
               Designer
             </h3>
-            <span className='services__button' onClick={() => toggleTab(1)}>
+            <span
+              data-aos='fade'
+              data-aos-delay='600'
+              className='services__button'
+              onClick={() => toggleTab(1)}
+            >
               View More
               <i className='uil uil-arrow-right services__button-icon'></i>
             </span>
@@ -40,9 +63,7 @@ const Services = () => {
                   onClick={() => toggleTab(0)}
                 ></i>
                 <h3 className='services__modal-title'>Product Designer</h3>
-                <p className='services__modal-description'>
-                  Cross-over, client-centered, health care, domain sales, CRM
-                </p>
+                <p className='services__modal-description'>Client-focused</p>
 
                 <ul className='services__modal-services grid'>
                   <li className='services__modal-service'>
@@ -77,13 +98,26 @@ const Services = () => {
 
         <div className='services__content'>
           <div>
-            <i className='uil uil-web-grid services__icon'></i>
-            <h3 className='services__title'>
+            <i
+              data-aos='fade'
+              data-aos-delay='200'
+              className='uil uil-web-grid services__icon'
+            ></i>
+            <h3
+              data-aos='fade'
+              data-aos-delay='500'
+              className='services__title'
+            >
               Cross
               <br />
               Over
             </h3>
-            <span className='services__button' onClick={() => toggleTab(2)}>
+            <span
+              data-aos='fade'
+              data-aos-delay='800'
+              className='services__button'
+              onClick={() => toggleTab(2)}
+            >
               View More
               <i className='uil uil-arrow-right services__button-icon'></i>
             </span>
@@ -138,13 +172,26 @@ const Services = () => {
 
         <div className='services__content'>
           <div>
-            <i className='uil uil-web-grid services__icon'></i>
-            <h3 className='services__title'>
+            <i
+              data-aos='fade'
+              data-aos-delay='400'
+              className='uil uil-web-grid services__icon'
+            ></i>
+            <h3
+              data-aos='fade'
+              data-aos-delay='700'
+              className='services__title'
+            >
               Team
               <br />
               Player
             </h3>
-            <span className='services__button' onClick={() => toggleTab(3)}>
+            <span
+              data-aos='fade'
+              data-aos-delay='1000'
+              className='services__button'
+              onClick={() => toggleTab(3)}
+            >
               View More
               <i className='uil uil-arrow-right services__button-icon'></i>
             </span>

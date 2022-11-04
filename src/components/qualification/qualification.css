@@ -1,3 +1,9 @@
+.qualification {
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+}
+
 .qualification__container {
   max-width: 768px;
 }

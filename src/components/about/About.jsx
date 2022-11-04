@@ -1,22 +1,37 @@
 import './about.css';
 import CV from '../../assets/Junghyun-Cv.pdf';
 import Info from './Info';
+import { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const About = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
+
   return (
     <section className='about section' id='about'>
-      <h2 className='section__title'>About Me</h2>
-      <span className='section__subtitle'>
+      <h2 data-aos='fade' className='section__title'>
+        About Me
+      </h2>
+      <span data-aos='fade' data-aos-delay='300' className='section__subtitle'>
         Client Centered | Time Management | Highly motivated
       </span>
       <div className='about__container container grid'>
-        <div className='about__img'></div>
+        <div data-aos='fade-in' className='about__img'></div>
         <div className='about__data'>
           <Info />
-          <p className='about__description'>
+          <p data-aos='fade' className='about__description'>
             Front End Developer Front End Developer Front End Developer
           </p>
-          <a download='' href={CV} className='button button--flex'>
+          <a
+            data-aos='zoom-out'
+            data-aos-delay='300'
+            download=''
+            href={CV}
+            className='button button--flex'
+          >
             Download CV
             <svg
               class='button__icon'

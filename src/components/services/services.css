@@ -1,3 +1,9 @@
+.services {
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+}
+
 .services__container {
   grid-template-columns: repeat(3, 270px);
   justify-content: center;
@@ -7,6 +13,7 @@
 .services__content {
   position: relative;
   border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 1.25rem;
   background-color: var(--container-color);
   padding: 6rem 0 2rem 2.5rem;
 }
