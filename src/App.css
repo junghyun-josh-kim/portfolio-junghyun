@@ -151,6 +151,7 @@ img {
   padding: 1.25rem 2rem;
   border-radius: 1rem;
   font-weight: var(--font-medium);
+  transition: all 600ms ease;
 }
 
 .button:hover {
@@ -159,6 +160,7 @@ img {
 
 .button__icon {
   margin-left: var(--mb-0-5);
+  transition: all 600ms ease;
 }
 
 .button--flex {

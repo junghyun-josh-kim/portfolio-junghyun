@@ -32,7 +32,7 @@ const Works = () => {
 
   return (
     <>
-      <div data-aos='zoom-in-down' data-aos-delay='0' className='work__filters'>
+      <div data-aos='fade' data-aos-delay='0' className='work__filters'>
         {projectsNav.map((item, index) => {
           return (
             <span

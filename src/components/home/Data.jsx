@@ -1,7 +1,11 @@
+import TextAnimation from './TextAnimation';
+
 const Data = () => {
   return (
     <div className='home__data'>
-      <h1 className='home__title'>Junghyun</h1>
+      <h1 className='home__title'>
+        <TextAnimation />
+      </h1>
       <h3 className='home__subtitle'>Front End Developer</h3>
       <p className='home__description'>
         Learning by Doing Learning by Doing Learning by Doing Learning by Doing
