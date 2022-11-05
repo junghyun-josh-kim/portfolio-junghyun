@@ -1,0 +1,11 @@
+.intro {
+  width: 100vw;
+  height: 140vh;
+  background-color: white;
+}
+
+.intro__wave {
+  width: 100%;
+  height: 100%;
+  transform: scaleY(-1);
+}

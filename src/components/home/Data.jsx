@@ -10,10 +10,10 @@ const Data = () => {
       <p className='home__description'>
         Learning by Doing Learning by Doing Learning by Doing Learning by Doing
       </p>
-      <a href='#contact' className='button button--flex'>
+      <a href='#contact' className='button button--flex active-icon'>
         Contact me
         <svg
-          class='button__icon'
+          class='button__icon active-icon'
           xmlns='http://www.w3.org/2000/svg'
           width='24'
           height='24'
